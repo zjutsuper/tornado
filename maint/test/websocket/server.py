@@ -16,6 +16,7 @@ class EchoHandler(WebSocketHandler):
 
 if __name__ == '__main__':
     parse_command_line()
+    print 'websocket start'
     app = Application([
             ('/', EchoHandler),
             ])
